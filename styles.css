@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информационный ресурс для выпускников 10–11 классов: как распознать эмоциональное выгорание во время подготовки к экзаменам и что с ним делать.">
+    <title>Без выгорания — поддержка выпускников в период подготовки к экзаменам</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='80'>🌿</text></svg>">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container nav-row">
+            <a href="#top" class="brand">
+                <span class="brand-mark" aria-hidden="true">🌿</span>
+                <span class="brand-text">Без выгорания</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#about">О выгорании</a></li>
+                    <li><a href="#signs">Признаки</a></li>
+                    <li><a href="#causes">Причины</a></li>
+                    <li><a href="#prevention">Профилактика</a></li>
+                    <li><a href="#tools">Техники</a></li>
+                    <li><a href="#test">Тест</a></li>
+                    <li><a href="#help">Помощь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="hero-eyebrow">Проект «Профилактика выгорания у выпускников в период подготовки к экзаменам»</span>
+                    <h1>Сдай экзамены без эмоционального выгорания</h1>
+                    <p class="hero-lead">
+                        Постоянная усталость, тревога, апатия, потеря интереса к учёбе — это не «лень»
+                        и не «слабость». Это признаки выгорания. Здесь собраны проверенные способы
+                        распознать его и справиться, не теряя сил до экзаменов.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#test" class="btn btn-primary">Пройти тест на выгорание</a>
+                        <a href="#tools" class="btn btn-ghost">Техники самопомощи</a>
+                    </div>
+                    <ul class="hero-bullets" aria-label="Что вы найдёте на сайте">
+                        <li><span>📚</span> Понятно объяснённая теория</li>
+                        <li><span>🧪</span> Анонимный самотест</li>
+                        <li><span>🌬️</span> Дыхательное упражнение</li>
+                        <li><span>📊</span> Реальные данные исследования</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Глава 1 · Теория</span>
+                    <h2>Что такое эмоциональное выгорание</h2>
+                    <p class="section-lead">
+                        Эмоциональное выгорание — это состояние физического, эмоционального и психического
+                        истощения, возникающее в результате длительного воздействия стрессовых факторов.
+                        В отличие от обычной усталости оно не проходит после выходных и со временем
+                        становится только сильнее.
+                    </p>
+                </header>
+
+                <div class="three-cards">
+                    <article class="info-card">
+                        <div class="info-icon stress">⚡</div>
+                        <h3>Стресс</h3>
+                        <p>
+                            Кратковременная реакция на конкретную ситуацию — контрольную, экзамен,
+                            дедлайн. Помогает мобилизоваться и обычно проходит, когда событие закончилось.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-icon tired">😴</div>
+                        <h3>Переутомление</h3>
+                        <p>
+                            Накопленная усталость от долгой умственной нагрузки. Уходит после
+                            нормального сна, выходных и переключения внимания.
+                        </p>
+                    </article>
+                    <article class="info-card highlight">
+                        <div class="info-icon burnout">🔥</div>
+                        <h3>Выгорание</h3>
+                        <p>
+                            Глубокое эмоциональное истощение и апатия, которые сохраняются даже после
+                            отдыха. Снижается мотивация, появляется ощущение «я больше не могу».
+                        </p>
+                    </article>
+                </div>
+
+                <div class="callout">
+                    <strong>Почему именно выпускники?</strong>
+                    Учащиеся 10–11 классов одновременно испытывают высокую учебную нагрузку,
+                    давление со стороны родителей и учителей, страх не оправдать ожидания и
+                    дефицит времени на отдых. При этом навыки саморегуляции у большинства
+                    школьников ещё не сформированы.
+                </div>
+            </div>
+        </section>
+
+        <!-- SIGNS -->
+        <section class="section section-alt" id="signs">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Самодиагностика</span>
+                    <h2>Признаки выгорания у выпускников</h2>
+                    <p class="section-lead">
+                        Выгорание проявляется на трёх уровнях. Если вы узнаёте у себя несколько
+                        пунктов одновременно — стоит замедлиться и пересмотреть режим.
+                    </p>
+                </header>
+
+                <div class="signs-grid">
+                    <div class="signs-block">
+                        <h3><span class="dot dot-1"></span> Эмоциональные</h3>
+                        <ul>
+                            <li>Постоянная тревога и ощущение, что «ничего не успеваю»</li>
+                            <li>Раздражительность по мелочам</li>
+                            <li>Апатия и безразличие к результатам</li>
+                            <li>Неуверенность в собственных силах</li>
+                        </ul>
+                    </div>
+                    <div class="signs-block">
+                        <h3><span class="dot dot-2"></span> Когнитивные</h3>
+                        <ul>
+                            <li>Трудно сосредоточиться даже на знакомом материале</li>
+                            <li>Память «подводит» — забываешь только что прочитанное</li>
+                            <li>Снижение интереса к любимым предметам</li>
+                            <li>Ощущение, что голова «не варит»</li>
+                        </ul>
+                    </div>
+                    <div class="signs-block">
+                        <h3><span class="dot dot-3"></span> Физические</h3>
+                        <ul>
+                            <li>Хроническая усталость, не проходящая после сна</li>
+                            <li>Головные боли и напряжение в шее/плечах</li>
+                            <li>Нарушение сна: бессонница или сонливость днём</li>
+                            <li>Снижение или, наоборот, переедание</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAUSES -->
+        <section class="section" id="causes">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Откуда оно берётся</span>
+                    <h2>Основные причины выгорания во время подготовки к экзаменам</h2>
+                </header>
+                <div class="causes-grid">
+                    <div class="cause"><span>📚</span><p>Чрезмерная учебная нагрузка и большое количество экзаменационных предметов</p></div>
+                    <div class="cause"><span>😟</span><p>Постоянное чувство тревоги и страха неудачи</p></div>
+                    <div class="cause"><span>👨‍👩‍👧</span><p>Давление со стороны родителей и учителей</p></div>
+                    <div class="cause"><span>⏳</span><p>Дефицит времени на отдых, спорт и общение</p></div>
+                    <div class="cause"><span>🌙</span><p>Нерегулярный режим сна, поздние засыпания</p></div>
+                    <div class="cause"><span>🗂️</span><p>Отсутствие чёткого плана подготовки</p></div>
+                    <div class="cause"><span>🤝</span><p>Недостаток психологической поддержки</p></div>
+                    <div class="cause"><span>📱</span><p>Постоянное сравнение себя с другими в соцсетях</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREVENTION -->
+        <section class="section section-alt" id="prevention">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Системный подход</span>
+                    <h2>Профилактика: как не выгореть до экзаменов</h2>
+                    <p class="section-lead">
+                        Эффективнее всего работает не одна «чудо-таблетка», а несколько небольших
+                        привычек, которые поддерживают друг друга.
+                    </p>
+                </header>
+
+                <div class="prevention-grid">
+                    <article class="prev-card">
+                        <h3>🗓️ Планирование подготовки</h3>
+                        <ul>
+                            <li>Составьте недельный план по предметам, а не «учу всё подряд»</li>
+                            <li>Делите большие темы на блоки по 30–60 минут</li>
+                            <li>Включайте в план обязательные перерывы и выходной день</li>
+                            <li>Раз в неделю смотрите, что получилось, и корректируйте план</li>
+                        </ul>
+                    </article>
+
+                    <article class="prev-card">
+                        <h3>🌙 Режим сна и отдыха</h3>
+                        <ul>
+                            <li>Спите 7–8 часов, ложитесь и вставайте примерно в одно время</li>
+                            <li>За час до сна — без телефона и яркого света</li>
+                            <li>После 40–60 минут учёбы — 5–10 минут перерыв (встаньте, подвигайтесь)</li>
+                            <li>Хотя бы один полный выходной без учебников в неделю</li>
+                        </ul>
+                    </article>
+
+                    <article class="prev-card">
+                        <h3>🏃 Тело и движение</h3>
+                        <ul>
+                            <li>20–30 минут активности в день: ходьба, велосипед, зарядка</li>
+                            <li>Простые упражнения для шеи и спины каждые 1–2 часа учёбы</li>
+                            <li>Пейте воду, не заменяйте её энергетиками и сладкой газировкой</li>
+                            <li>Свежий воздух хотя бы раз в день — даже 15 минут помогают</li>
+                        </ul>
+                    </article>
+
+                    <article class="prev-card">
+                        <h3>🧠 Снижение тревоги</h3>
+                        <ul>
+                            <li>Замените мысль «я ничего не сдам» на «что я могу сделать сегодня»</li>
+                            <li>Решайте пробные варианты: чем больше повторений — тем меньше страх</li>
+                            <li>Дыхательные техники и короткая медитация перед сном</li>
+                            <li>Не сравнивайте свой прогресс с одноклассниками — только с собой вчера</li>
+                        </ul>
+                    </article>
+
+                    <article class="prev-card">
+                        <h3>👥 Поддержка</h3>
+                        <ul>
+                            <li>Расскажите близким, какая поддержка вам сейчас нужна</li>
+                            <li>Не оставайтесь один на один со страхом — обсудите его</li>
+                            <li>Если в школе есть психолог — это нормально к нему обратиться</li>
+                            <li>Учитесь с друзьями: совместные разборы тем снижают стресс</li>
+                        </ul>
+                    </article>
+
+                    <article class="prev-card">
+                        <h3>🎯 Реалистичные цели</h3>
+                        <ul>
+                            <li>Ставьте цели на день, а не «выучить всю математику»</li>
+                            <li>Хвалите себя даже за маленький прогресс</li>
+                            <li>Помните: экзамен — это этап, а не приговор на всю жизнь</li>
+                            <li>У вас всегда есть запасной план, даже если кажется иначе</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOLS / Interactive -->
+        <section class="section" id="tools">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Практические техники</span>
+                    <h2>Инструменты, которые можно применять прямо сейчас</h2>
+                </header>
+
+                <div class="tools-grid">
+                    <!-- Breathing -->
+                    <article class="tool-card breathing-card">
+                        <h3>🌬️ Дыхание «4–7–8»</h3>
+                        <p>
+                            Помогает снять острую тревогу за пару минут. Вдох носом на 4 секунды,
+                            задержка на 7, медленный выдох ртом на 8. Достаточно 3–4 циклов.
+                        </p>
+                        <div class="breathing-stage" aria-hidden="true">
+                            <div class="breathing-circle" id="breathCircle">
+                                <span id="breathLabel">Начать</span>
+                            </div>
+                        </div>
+                        <div class="breathing-controls">
+                            <button class="btn btn-primary" id="breathStart">Запустить упражнение</button>
+                            <button class="btn btn-ghost" id="breathStop" disabled>Остановить</button>
+                        </div>
+                        <p class="tool-hint" id="breathHint">Сядьте ровно, расслабьте плечи. Готово? Нажимайте «Запустить».</p>
+                    </article>
+
+                    <!-- Pomodoro -->
+                    <article class="tool-card pomodoro-card">
+                        <h3>⏱️ Помодоро-таймер</h3>
+                        <p>
+                            Учёба интервалами по 25 минут с перерывами по 5 минут уменьшает усталость и
+                            помогает не «утонуть» в одной теме на полдня.
+                        </p>
+                        <div class="pomodoro-display" id="pomoDisplay">25:00</div>
+                        <div class="pomodoro-mode" id="pomoMode">Фокус • 25 минут</div>
+                        <div class="pomodoro-controls">
+                            <button class="btn btn-primary" id="pomoStart">Старт</button>
+                            <button class="btn btn-ghost" id="pomoReset">Сброс</button>
+                            <button class="btn btn-ghost" id="pomoSkip">Дальше</button>
+                        </div>
+                        <p class="tool-hint">Цикл: 25 мин фокус → 5 мин отдых → повтор. После 4 фокусов — длинный перерыв 15 минут.</p>
+                    </article>
+
+                    <!-- Grounding -->
+                    <article class="tool-card grounding-card">
+                        <h3>🪨 Техника «5–4–3–2–1»</h3>
+                        <p>Возвращает в реальность при сильной тревоге. Найдите вокруг:</p>
+                        <ul class="ground-list">
+                            <li><b>5</b> вещей, которые вы <em>видите</em></li>
+                            <li><b>4</b> вещи, которые вы можете <em>потрогать</em></li>
+                            <li><b>3</b> звука, которые вы <em>слышите</em></li>
+                            <li><b>2</b> запаха, которые вы <em>чувствуете</em></li>
+                            <li><b>1</b> вкус во рту</li>
+                        </ul>
+                        <p class="tool-hint">Делайте медленно, проговаривая вслух или мысленно.</p>
+                    </article>
+
+                    <!-- Reframe -->
+                    <article class="tool-card reframe-card">
+                        <h3>💭 Перепиши тревожную мысль</h3>
+                        <p>
+                            Запишите тревожную мысль и переформулируйте её в действие. Это снижает
+                            ощущение беспомощности.
+                        </p>
+                        <label class="visually-hidden" for="reframeInput">Тревожная мысль</label>
+                        <textarea id="reframeInput" placeholder="Например: «Я ничего не сдам, я тупой»"></textarea>
+                        <button class="btn btn-primary" id="reframeBtn">Превратить в шаг</button>
+                        <div class="reframe-output" id="reframeOutput" hidden></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEST -->
+        <section class="section section-alt" id="test">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Анонимный самотест</span>
+                    <h2>Проверь, есть ли у тебя признаки выгорания</h2>
+                    <p class="section-lead">
+                        7 коротких вопросов на основе анкеты, которую заполняли 25 выпускников
+                        в рамках исследования. Ответы никуда не отправляются — всё считается прямо в браузере.
+                    </p>
+                </header>
+
+                <div class="test-card" id="testCard">
+                    <div class="test-progress" aria-hidden="true">
+                        <div class="test-progress-bar" id="testProgressBar"></div>
+                    </div>
+                    <div class="test-step-counter" id="testCounter">Вопрос 1 из 7</div>
+
+                    <form id="testForm" novalidate>
+                        <div class="test-step" data-step="1">
+                            <h3>1. Как часто вы чувствуете усталость в период подготовки к экзаменам?</h3>
+                            <div class="test-options" data-q="1">
+                                <label><input type="radio" name="q1" value="2"> Постоянно</label>
+                                <label><input type="radio" name="q1" value="1"> Периодически</label>
+                                <label><input type="radio" name="q1" value="0"> Почти не чувствую</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="2" hidden>
+                            <h3>2. Испытываете ли вы тревожность перед экзаменами?</h3>
+                            <div class="test-options" data-q="2">
+                                <label><input type="radio" name="q2" value="2"> Часто/сильно</label>
+                                <label><input type="radio" name="q2" value="1"> Иногда</label>
+                                <label><input type="radio" name="q2" value="0"> Нет</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="3" hidden>
+                            <h3>3. Снизился ли ваш интерес к учёбе в течение года?</h3>
+                            <div class="test-options" data-q="3">
+                                <label><input type="radio" name="q3" value="2"> Да, заметно</label>
+                                <label><input type="radio" name="q3" value="1"> Немного</label>
+                                <label><input type="radio" name="q3" value="0"> Нет, мотивация на месте</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="4" hidden>
+                            <h3>4. Сколько часов в среднем вы спите в сутки?</h3>
+                            <div class="test-options" data-q="4">
+                                <label><input type="radio" name="q4" value="2"> Меньше 6 часов</label>
+                                <label><input type="radio" name="q4" value="1"> 6–7 часов</label>
+                                <label><input type="radio" name="q4" value="0"> 7–8 часов и больше</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="5" hidden>
+                            <h3>5. Есть ли у вас чёткий план подготовки к экзаменам?</h3>
+                            <div class="test-options" data-q="5">
+                                <label><input type="radio" name="q5" value="2"> Нет</label>
+                                <label><input type="radio" name="q5" value="1"> Частично</label>
+                                <label><input type="radio" name="q5" value="0"> Да, чёткий</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="6" hidden>
+                            <h3>6. Чувствуете ли вы давление со стороны родителей или учителей?</h3>
+                            <div class="test-options" data-q="6">
+                                <label><input type="radio" name="q6" value="2"> Постоянно</label>
+                                <label><input type="radio" name="q6" value="1"> Иногда</label>
+                                <label><input type="radio" name="q6" value="0"> Нет</label>
+                            </div>
+                        </div>
+
+                        <div class="test-step" data-step="7" hidden>
+                            <h3>7. Используете ли вы способы снижения стресса (спорт, прогулки, хобби, отдых)?</h3>
+                            <div class="test-options" data-q="7">
+                                <label><input type="radio" name="q7" value="2"> Почти нет</label>
+                                <label><input type="radio" name="q7" value="1"> Нерегулярно</label>
+                                <label><input type="radio" name="q7" value="0"> Регулярно</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="test-controls">
+                        <button class="btn btn-ghost" id="testBack" disabled>Назад</button>
+                        <button class="btn btn-primary" id="testNext">Дальше</button>
+                    </div>
+
+                    <div class="test-result" id="testResult" hidden>
+                        <h3 id="testResultTitle"></h3>
+                        <div class="test-score-bar"><div class="test-score-fill" id="testScoreFill"></div></div>
+                        <p id="testResultText"></p>
+                        <ul id="testResultTips"></ul>
+                        <div class="test-result-actions">
+                            <button class="btn btn-primary" id="testRestart">Пройти ещё раз</button>
+                            <a href="#tools" class="btn btn-ghost">К техникам самопомощи</a>
+                        </div>
+                        <p class="test-disclaimer">
+                            Этот тест не является медицинской диагностикой. Если усталость,
+                            тревога или апатия мешают учиться и жить — обратитесь к школьному
+                            психологу или специалисту (см. раздел «Помощь»).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- HELP -->
+        <section class="section section-alt" id="help">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">Если стало тяжело</span>
+                    <h2>Куда можно обратиться за поддержкой</h2>
+                    <p class="section-lead">
+                        Просить помощь — это нормально и сильно. Особенно когда учёба, тревога и
+                        ожидания родителей накрывают одновременно.
+                    </p>
+                </header>
+
+                <div class="help-grid">
+                    <a class="help-card" href="tel:88002000122">
+                        <h3>📞 Детский телефон доверия</h3>
+                        <div class="help-number">8-800-2000-122</div>
+                        <p>Бесплатно, анонимно, круглосуточно. Для детей, подростков и их родителей.</p>
+                    </a>
+                    <div class="help-card">
+                        <h3>🧑‍🏫 Школьный психолог</h3>
+                        <p>В большинстве школ есть психолог. Запись обычно через классного руководителя или напрямую — в кабинете психолога.</p>
+                        <p class="help-meta">Это конфиденциально и не «попадёт в личное дело».</p>
+                    </div>
+                    <div class="help-card">
+                        <h3>👨‍👩‍👧 Родители и близкие</h3>
+                        <p>Скажите им конкретно, какая поддержка нужна: «послушай меня», «не давите с оценками неделю», «помоги составить план».</p>
+                    </div>
+                    <div class="help-card">
+                        <h3>🩺 К врачу</h3>
+                        <p>Если уже несколько недель есть бессонница, головные боли, апатия или панические атаки — это повод обратиться к врачу или психотерапевту.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT PROJECT -->
+        <section class="section" id="project">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-eyebrow">О проекте</span>
+                    <h2>Профилактика выгорания у выпускников</h2>
+                </header>
+                <div class="project-grid">
+                    <div>
+                        <h3>Цель</h3>
+                        <p>Разработать практические рекомендации по профилактике причин выгорания у выпускников в период подготовки к экзаменам.</p>
+                        <h3>Гипотеза</h3>
+                        <p>Если выпускники будут осведомлены о причинах эмоционального выгорания и освоят практические методы его профилактики, уровень эмоционального напряжения снизится, а эффективность подготовки к экзаменам повысится.</p>
+                    </div>
+                    <div>
+                        <h3>Методы</h3>
+                        <ul class="bare-list">
+                            <li>Анализ научной, психологической и педагогической литературы</li>
+                            <li>Анкетирование учащихся 10–11 классов (25 человек)</li>
+                            <li>Наблюдение за учебной деятельностью выпускников</li>
+                            <li>Обобщение, систематизация и сравнительный анализ</li>
+                            <li>Разработка практических рекомендаций и информационного сайта</li>
+                        </ul>
+                        <h3>Практическая значимость</h3>
+                        <p>Материалы сайта полезны самим выпускникам, классным руководителям, школьным психологам и родителям — для профилактики выгорания и сохранения психоэмоционального здоровья.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand brand-light">
+                    <span class="brand-mark" aria-hidden="true">🌿</span>
+                    <span class="brand-text">Без выгорания</span>
+                </div>
+                <p class="footer-author">Максименко Демид</p>
+            </div>
+            <div>
+                <h4>Разделы</h4>
+                <ul class="bare-list small">
+                    <li><a href="#about">О выгорании</a></li>
+                    <li><a href="#signs">Признаки</a></li>
+                    <li><a href="#prevention">Профилактика</a></li>
+                    <li><a href="#tools">Техники</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Поддержка</h4>
+                <ul class="bare-list small">
+                    <li><a href="tel:88002000122">8-800-2000-122 — телефон доверия</a></li>
+                    <li><a href="#help">К кому обратиться</a></li>
+                    <li><a href="#test">Пройти тест</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Проект «Профилактика выгорания у выпускников в период подготовки к экзаменам». Сайт-продукт по проекту.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>

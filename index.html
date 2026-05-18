@@ -1,0 +1,134 @@
+// Self-test logic: 7 questions, each answer worth 0-2 points (max = 14)
+(function () {
+    const card = document.getElementById('testCard');
+    if (!card) return;
+
+    const form = document.getElementById('testForm');
+    const steps = Array.from(card.querySelectorAll('.test-step'));
+    const counter = document.getElementById('testCounter');
+    const progressBar = document.getElementById('testProgressBar');
+    const backBtn = document.getElementById('testBack');
+    const nextBtn = document.getElementById('testNext');
+    const result = document.getElementById('testResult');
+    const resultTitle = document.getElementById('testResultTitle');
+    const resultText = document.getElementById('testResultText');
+    const resultTips = document.getElementById('testResultTips');
+    const scoreFill = document.getElementById('testScoreFill');
+    const restartBtn = document.getElementById('testRestart');
+
+    let current = 0;
+
+    const showStep = (idx) => {
+        steps.forEach((s, i) => {
+            s.hidden = i !== idx;
+        });
+        counter.textContent = `Вопрос ${idx + 1} из ${steps.length}`;
+        progressBar.style.width = `${((idx + 1) / steps.length) * 100}%`;
+        backBtn.disabled = idx === 0;
+        nextBtn.textContent = idx === steps.length - 1 ? 'Показать результат' : 'Дальше';
+    };
+
+    const currentStepValid = () => {
+        const step = steps[current];
+        const inputs = step.querySelectorAll('input[type="radio"]');
+        return Array.from(inputs).some((i) => i.checked);
+    };
+
+    const calculateScore = () => {
+        let score = 0;
+        for (let i = 1; i <= steps.length; i++) {
+            const checked = form.querySelector(`input[name="q${i}"]:checked`);
+            if (checked) score += parseInt(checked.value, 10);
+        }
+        return score;
+    };
+
+    const renderResult = () => {
+        const score = calculateScore();
+        const max = steps.length * 2;
+        const percent = Math.round((score / max) * 100);
+
+        let title;
+        let text;
+        let tips = [];
+
+        if (score <= 4) {
+            title = '🌿 Низкий уровень риска выгорания';
+            text =
+                'Сейчас вы в относительно ресурсном состоянии. Это отличная база для подготовки — постарайтесь сохранить режим, не перегружайте себя резко перед экзаменами.';
+            tips = [
+                'Продолжайте поддерживать сон 7–8 часов и регулярные перерывы',
+                'Раз в неделю проверяйте план подготовки и корректируйте его',
+                'Сохраняйте хобби и общение — это ресурс, а не «отвлечение от учёбы»',
+            ];
+        } else if (score <= 9) {
+            title = '⚠️ Средний уровень — есть признаки переутомления';
+            text =
+                'У вас уже накопилась усталость и тревога. Если ничего не менять, это может перейти в выгорание. Хорошая новость: на этом этапе помогают простые шаги.';
+            tips = [
+                'Проверьте режим сна — главное не количество, а регулярность',
+                'Делите подготовку на 25–60-минутные блоки с короткими перерывами',
+                'Каждый день включайте 10–20 минут движения или прогулки',
+                'Используйте дыхательное упражнение «4–7–8» перед сложной темой',
+                'Поговорите с близкими о своих ощущениях — не оставайтесь один на один',
+            ];
+        } else {
+            title = '🚨 Высокий уровень риска выгорания';
+            text =
+                'Симптомы выраженные: постоянная усталость, тревога, недосып, давление. Сейчас важно не «дотерпеть до экзамена», а восстанавливать ресурс — иначе результат будет только хуже.';
+            tips = [
+                'Снизьте нагрузку: один полный выходной в неделю — обязателен',
+                'Восстановите сон в первую очередь (7–8 часов, ложиться раньше)',
+                'Расскажите родителям, какая поддержка вам нужна сейчас',
+                'Поговорите со школьным психологом — это конфиденциально',
+                'Если есть бессонница, апатия или панические атаки — обратитесь к специалисту',
+                'Запомните номер: 8-800-2000-122 — детский телефон доверия (бесплатно, анонимно)',
+            ];
+        }
+
+        resultTitle.textContent = title;
+        resultText.textContent = text;
+        resultTips.innerHTML = tips.map((t) => `<li>${t}</li>`).join('');
+        scoreFill.style.width = `${percent}%`;
+
+        steps.forEach((s) => (s.hidden = true));
+        backBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        counter.style.display = 'none';
+        result.hidden = false;
+    };
+
+    nextBtn.addEventListener('click', () => {
+        if (!currentStepValid()) {
+            const step = steps[current];
+            step.classList.add('shake');
+            setTimeout(() => step.classList.remove('shake'), 400);
+            return;
+        }
+        if (current === steps.length - 1) {
+            renderResult();
+            return;
+        }
+        current += 1;
+        showStep(current);
+    });
+
+    backBtn.addEventListener('click', () => {
+        if (current === 0) return;
+        current -= 1;
+        showStep(current);
+    });
+
+    restartBtn.addEventListener('click', () => {
+        form.reset();
+        current = 0;
+        result.hidden = true;
+        backBtn.style.display = '';
+        nextBtn.style.display = '';
+        counter.style.display = '';
+        showStep(0);
+        document.getElementById('test').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    showStep(0);
+})();
